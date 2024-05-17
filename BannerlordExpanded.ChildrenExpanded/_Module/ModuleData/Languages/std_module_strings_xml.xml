@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="English" />
+	</tags>
+	<strings>
+		<!-- Child Lord Settings -->
+		<string id="BE_ChildrenExpanded_Settings_ChildrenLords" text="Children Lords." />
+		<string id="BE_ChildrenExpanded_Settings_InfantAge" text="Become Infant Age" />
+		<string id="BE_ChildrenExpanded_Settings_InfantAge_Desc" text="Native: 3. Must be less than Become Child Age." />
+		<string id="BE_ChildrenExpanded_Settings_ChildAge" text="Become Child Age" />
+		<string id="BE_ChildrenExpanded_Settings_ChildAge_Desc" text="}Native: 6. Must be less than Become Teenager Age." />
+		<string id="BE_ChildrenExpanded_Settings_TeenagerAge" text="Become Teenager Age" />
+		<string id="BE_ChildrenExpanded_Settings_TeenagerAge_Desc" text="Native: 14. Must be less than Hero Comes Of Age." />
+		<string id="BE_ChildrenExpanded_Settings_AdultAge" text="Hero Comes Of Age" />
+		<string id="BE_ChildrenExpanded_Settings_AdultAge_Desc" text="Native: 18. Must be less than Become Old Age." />		
+		<string id="BE_ChildrenExpanded_Settings_MarriageAge" text="Minimum Age For Marriage" />
+		<string id="BE_ChildrenExpanded_Settings_MarriageAge_Desc" text="Native: 18." />
+		<string id="BE_ChildrenExpanded_Settings_CanExecuteChildren" text="Can Execute Children." />
+		<string id="BE_ChildrenExpanded_Settings_CanExecuteChildren_Desc" text="Native: False" />
+		
+		<!-- Bandit Children Settings -->
+		<string id="BE_ChildrenExpanded_Settings_BanditChildren" text="Bandit Children" />
+		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MinPercent" text="Minimum Percent Of Children To Add" />
+		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MinPercent_Desc" text="If I have 10 looters, setting it to 50% will result with at least 5 looter children." />
+		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MaxPercent" text="Maximum Percent Of Children To Add" />
+		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MaxPercent_Desc" text="If I have 10 looters, setting it to 50% will result with at most 5 looter children." />
+	</strings>
+</base>

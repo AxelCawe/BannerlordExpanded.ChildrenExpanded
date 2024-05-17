@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BannerlordExpanded.ChildrenExpanded", "BannerlordExpanded.ChildrenExpanded\BannerlordExpanded.ChildrenExpanded.csproj", "{7AE1279F-5839-40D8-917C-EA7A16749D9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AE1279F-5839-40D8-917C-EA7A16749D9A}.Debug|x64.ActiveCfg = Debug|x64
+		{7AE1279F-5839-40D8-917C-EA7A16749D9A}.Debug|x64.Build.0 = Debug|x64
+		{7AE1279F-5839-40D8-917C-EA7A16749D9A}.Release|x64.ActiveCfg = Release|x64
+		{7AE1279F-5839-40D8-917C-EA7A16749D9A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D08B004-C668-42DE-9066-33EC70F4D767}
+	EndGlobalSection
+EndGlobal
