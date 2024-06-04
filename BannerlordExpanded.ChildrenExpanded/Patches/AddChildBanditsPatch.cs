@@ -23,11 +23,11 @@ namespace Some_Bandits_Are_Now_Children.Patches
             {
                 // Correction
                 {
-                    if (Config.Instance.minPercentOfBanditChildrenToAdd > Config.Instance.maxPercentOfBanditChildrenToAdd)
+                    if (Config.Instance.MinPercentOfBanditChildrenToAdd > Config.Instance.MaxPercentOfBanditChildrenToAdd)
                     {
-                        int temp = Config.Instance.minPercentOfBanditChildrenToAdd;
-                        Config.Instance.minPercentOfBanditChildrenToAdd = Config.Instance.maxPercentOfBanditChildrenToAdd;
-                        Config.Instance.maxPercentOfBanditChildrenToAdd = temp;
+                        int temp = Config.Instance.MinPercentOfBanditChildrenToAdd;
+                        Config.Instance.MinPercentOfBanditChildrenToAdd = Config.Instance.MaxPercentOfBanditChildrenToAdd;
+                        Config.Instance.MaxPercentOfBanditChildrenToAdd = temp;
                     }
                 }
 
@@ -37,7 +37,7 @@ namespace Some_Bandits_Are_Now_Children.Patches
                     CharacterObject childObject = CharacterObject.Find(troop.Character.StringId + "_children");
                     CharacterObject childFemaleObject = CharacterObject.Find(troop.Character.StringId + "_children_female");
 
-                    float numberPercent = new Random().Next(Config.Instance.minPercentOfBanditChildrenToAdd, Config.Instance.maxPercentOfBanditChildrenToAdd + 1);
+                    float numberPercent = new Random().Next(Config.Instance.MinPercentOfBanditChildrenToAdd, Config.Instance.MaxPercentOfBanditChildrenToAdd + 1);
                     int numToAdd = TaleWorlds.Library.MathF.Floor(numberPercent / 100f * troop.Number);
                     if (childObject != null && childFemaleObject != null) numToAdd /= 2;
 
