@@ -36,10 +36,10 @@ namespace BannerlordExpanded.ChildrenExpanded.Settings
         [SettingPropertyGroup("{=BE_ChildrenExpanded_Settings_ChildrenLords}Children Lords", GroupOrder = 0)]
         public int HeroComesOfAge { get; set; } = 10;
 
-        [SettingPropertyInteger("{=BE_ChildrenExpanded_Settings_MarriageAge}Minimum Age For Marriage", 1, 125, "0 Years", RequireRestart = false, Order = 6,
+        [SettingPropertyInteger("{=BE_ChildrenExpanded_Settings_MarriageAge}Minimum Age For Marriage", 18, 125, "0 Years", RequireRestart = false, Order = 6,
         HintText = "{=BE_ChildrenExpanded_Settings_MarriageAge_Desc}Native: 18.")]
         [SettingPropertyGroup("{=BE_ChildrenExpanded_Settings_ChildrenLords}Children Lords", GroupOrder = 0)]
-        public int MinAgeForMarriage { get; set; } = 10;
+        public int MinAgeForMarriage { get; set; } = 18;
 
         [SettingPropertyBool("{=BE_ChildrenExpanded_Settings_CanExecuteChildren}Can Execute Children", RequireRestart = true, Order = 7,
         HintText = "{=BE_ChildrenExpanded_Settings_CanExecuteChildren_Desc}Native: False")]
