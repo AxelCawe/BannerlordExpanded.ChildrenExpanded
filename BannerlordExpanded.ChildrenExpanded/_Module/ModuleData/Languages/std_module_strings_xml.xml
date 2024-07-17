@@ -25,5 +25,10 @@
 		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MinPercent_Desc" text="If I have 10 looters, setting it to 50% will result with at least 5 looter children." />
 		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MaxPercent" text="Maximum Percent Of Children To Add" />
 		<string id="BE_ChildrenExpanded_Settings_BanditChildren_MaxPercent_Desc" text="If I have 10 looters, setting it to 50% will result with at most 5 looter children." />
+		
+		<!-- Mod Settings Error Text-->
+		<string id="BE_ChildrenExpanded_Settings_ChildrenLords_Error_01" text="[BE_ChildrenExpanded]: Mod Settings Error -> Become Infant Age value is greater than Become Child Age value. Mod has auto-patched for Become Child Age to align with Become Infant Age" />
+		<string id="BE_ChildrenExpanded_Settings_ChildrenLords_Error_02" text="[BE_ChildrenExpanded]: Mod Settings Error -> Become Child Age value is greater than Become Teenager Age value. Mod has auto-patched for Become Teenager Age to align with Become Child Age" />
+		<string id="BE_ChildrenExpanded_Settings_ChildrenLords_Error_03" text="[BE_ChildrenExpanded]: Mod Settings Error -> Become Teenager Age value is greater than Hero Comes Of Age value. Mod has auto-patched for Hero Comes Of Age to align with Become Teenager Age" />
 	</strings>
 </base>
