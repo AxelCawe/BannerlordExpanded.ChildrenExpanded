@@ -25,6 +25,7 @@ namespace BannerlordExpanded.ChildrenExpanded
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
+            Harmony.DEBUG = true;
             base.OnBeforeInitialModuleScreenSetAsRoot();
             new Harmony("BannerlordExpanded.ChildrenExpanded").PatchAll(Assembly.GetExecutingAssembly());
 
