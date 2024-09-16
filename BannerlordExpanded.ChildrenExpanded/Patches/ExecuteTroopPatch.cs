@@ -1,5 +1,6 @@
 ﻿using BannerlordExpanded.ChildrenExpanded.Settings;
 using HarmonyLib;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -18,7 +19,7 @@ namespace BannerlordExpanded.ChildrenExpanded.Patches
             {
 
                 MethodInfo ignoreFunc = typeof(FaceGen).GetMethod("GetMaturityTypeWithAge", BindingFlags.Static | BindingFlags.Public);
-                MethodInfo trueFunc = typeof(ExecuteTroopPatch).GetMethod("ReturnFalseBody", BindingFlags.Static | BindingFlags.NonPublic);
+                MethodInfo trueFunc = AccessTools.Method(typeof(ExecuteTroopPatchReplacerMethod), "ReturnFalseBody", new Type[] { typeof(int) });
 
                 foreach (var instruction in instructions)
                 {
@@ -34,10 +35,7 @@ namespace BannerlordExpanded.ChildrenExpanded.Patches
         }
 
 
-        static BodyMeshMaturityType ReturnFalseBody(int age)
-        {
-            return BodyMeshMaturityType.Adult;
-        }
+
     }
 
 }
