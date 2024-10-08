@@ -23,9 +23,7 @@ namespace BannerlordExpanded.ChildrenExpanded.Patches
                 foreach (var instruction in instructions)
                 {
                     if (instruction.opcode == OpCodes.Call && instruction.Calls(ignoreFunc))
-                    {
                         yield return new CodeInstruction(OpCodes.Call, trueFunc);
-                    }
                     else
                         yield return instruction;
                 }
@@ -34,7 +32,7 @@ namespace BannerlordExpanded.ChildrenExpanded.Patches
         }
 
 
-        static BodyMeshMaturityType ReturnFalseBody(int age)
+        static BodyMeshMaturityType ReturnFalseBody(float age)
         {
             return BodyMeshMaturityType.Adult;
         }
