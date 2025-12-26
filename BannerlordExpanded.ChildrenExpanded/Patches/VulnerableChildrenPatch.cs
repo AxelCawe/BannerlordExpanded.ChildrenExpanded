@@ -4,7 +4,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace BannerlordExpanded.ChildrenExpanded.Patches
 {
-    [HarmonyPatch(typeof(Agent), "EquipItemsFromSpawnEquipment", typeof(bool), typeof(bool))]
+    [HarmonyPatch(typeof(Agent), "EquipItemsFromSpawnEquipment", typeof(bool), typeof(bool), typeof(bool), typeof(int))]
     public static class VulnerableChildrenPatch
     {
         [HarmonyPostfix]
@@ -35,7 +35,7 @@ namespace BannerlordExpanded.ChildrenExpanded.Patches
             return new SkinGenerationParams((int)SkinMask.NoneVisible, agent.SpawnEquipment.GetUnderwearType(agent.IsFemale && agent.Age >= 14),
                     (int)agent.SpawnEquipment.BodyMeshType, (int)agent.SpawnEquipment.HairCoverType, (int)agent.SpawnEquipment.BeardCoverType,
                     (int)agent.SpawnEquipment.BodyDeformType, agent == Agent.Main, agent.Character.FaceDirtAmount, agent.IsFemale ? 1 : 0,
-                    agent.Character.Race, false, false);
+                    agent.Character.Race, false, false, 0);
         }
     }
 }
